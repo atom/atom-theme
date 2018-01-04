@@ -7,11 +7,16 @@
 
   --hue: 208;
 
-  --fg:     hsl(var(--hue), 100%, 77%);
-  --bg:     hsl(var(--hue), 66%, 18%);
-  --border: hsl(var(--hue), 66%, 25%);
+  --fg:         hsl(var(--hue), 0%, 25%);
+  --fg-subtle:  hsl(var(--hue), 0%, 55%);
 
-  --accent: hsl(28, 100%, 66%);
+  --bg:         hsl(var(--hue), 66%, 99%);
+  --bg-below:   hsl(var(--hue), 10%, 92%);
+
+  --border:     hsl(var(--hue), 66%, 25%);
+
+  --accent:     hsl(280, 100%, 60%);
+  --accent-fg:  white;
 
 
   /* Syntax --------------------------------- */
@@ -37,7 +42,9 @@
   --font-height:  1.5;
 
 
-  /* Spacing --------------------------------- */
+  /* Layout --------------------------------- */
+
+  --bar-height: 24px; /* Used for tabs, status-bar */
 
   --spacer:    8px; /* default */
 
