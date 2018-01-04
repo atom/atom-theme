@@ -1,0 +1,57 @@
+
+/* Atom theme */
+
+:root {
+
+  /* Colors --------------------------------- */
+
+  --hue: 208;
+
+  --fg:     hsl(var(--hue), 100%, 77%);
+  --bg:     hsl(var(--hue), 66%, 18%);
+  --border: hsl(var(--hue), 66%, 25%);
+
+  --accent: hsl(28, 100%, 66%);
+
+
+  /* Syntax --------------------------------- */
+
+  --syntax-variable:   hsl(  5, 74%, 59%);
+  --syntax-constant:   hsl( 41, 99%, 30%);
+  --syntax-property:   hsl(208,  8%, 24%);
+  --syntax-value:      hsl(208,  8%, 24%);
+  --syntax-function:   hsl(221, 87%, 60%);
+  --syntax-method:     hsl(221, 87%, 60%);
+  --syntax-class:      hsl( 41, 99%, 38%);
+  --syntax-keyword:    hsl(301, 63%, 40%);
+  --syntax-tag:        hsl(  5, 74%, 59%);
+  --syntax-attribute:  hsl( 41, 99%, 30%);
+  --syntax-import:     hsl(301, 63%, 40%);
+  --syntax-snippet:    hsl(119, 34%, 47%);
+
+
+  /* Typography --------------------------------- */
+
+  --font-size:    12px;
+  --font-family:  'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  --font-height:  1.5;
+
+
+  /* Spacing --------------------------------- */
+
+  --spacer:    8px; /* default */
+
+  --spacer-0:    0;
+  --spacer-1:  4px;
+  --spacer-2:  8px;
+  --spacer-3: 12px;
+  --spacer-4: 24px;
+  --spacer-5: 32px;
+  --spacer-6: 40px;
+
+
+  /* Misc --------------------------------- */
+
+  --border-radius: 3px;
+
+}
