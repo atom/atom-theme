@@ -25,18 +25,22 @@
 
   /* Syntax --------------------------------- */
 
-  --syntax-variable:   hsl(  5, 74%, 59%);
-  --syntax-constant:   hsl( 41, 99%, 30%);
-  --syntax-property:   hsl(208,  8%, 24%);
-  --syntax-value:      hsl(208,  8%, 24%);
-  --syntax-function:   hsl(221, 87%, 60%);
-  --syntax-method:     hsl(221, 87%, 60%);
-  --syntax-class:      hsl( 41, 99%, 38%);
-  --syntax-keyword:    hsl(301, 63%, 40%);
-  --syntax-tag:        hsl(  5, 74%, 59%);
-  --syntax-attribute:  hsl( 41, 99%, 30%);
-  --syntax-import:     hsl(301, 63%, 40%);
-  --syntax-snippet:    hsl(119, 34%, 47%);
+  --syntax:             hsl( var(--hue), 20%, 90%);
+
+  --syntax-variable:   hsl(191, 91%, 73%);
+  --syntax-constant:   hsl( 48, 71%, 76%);
+  --syntax-property:   hsl(  5, 91%, 73%);
+  --syntax-value:      hsl(286, 82%, 79%);
+  --syntax-function:   hsl(212, 99%, 75%);
+  --syntax-method:     hsl(212, 99%, 75%);
+  --syntax-class:      hsl(191, 91%, 73%);
+  --syntax-keyword:    hsl(118, 69%, 78%);
+  --syntax-string:     hsl( 88, 69%, 78%);
+  --syntax-tag:        hsl( var(--hue), 60%, 88%);
+  --syntax-attribute:  hsl( var(--hue), 40%, 70%);
+
+  --syntax-punctuation: hsl( var(--hue), 10%, 60%);
+  --syntax-comment:     hsl( var(--hue), 15%, 50%);
 }
 
 
