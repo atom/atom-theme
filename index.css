@@ -5,18 +5,22 @@
 
   /* Colors --------------------------------- */
 
-  --hue: 208;
+  --hue: 220;
+  --saturation: 30%;
+  --lightness: 20%;
 
-  --fg:         hsl(var(--hue), 0%, 25%);
-  --fg-subtle:  hsl(var(--hue), 0%, 55%);
+  --bg:           hsl( var(--hue), var(--saturation), var(--lightness) );
+  --bg-selected:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 4%) );
+  --bg-below:     hsl( var(--hue), var(--saturation), calc( var(--lightness) - 4%) );  /* darken */
 
-  --bg:         hsl(var(--hue), 66%, 99%);
-  --bg-below:   hsl(var(--hue), 10%, 92%);
+  --fg-strong:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 80%) );
+  --fg:           hsl( var(--hue), var(--saturation), calc( var(--lightness) + 50%) );
+  --fg-subtle:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 30%) );
 
-  --border:     hsl(var(--hue), 66%, 25%);
+  --border-color: hsl( var(--hue), var(--saturation), calc( var(--lightness) - 8%) );  /* darken */
 
-  --accent:     hsl(280, 100%, 60%);
-  --accent-fg:  white;
+  --accent:       hsl(280, 100%, 60%);
+  --accent-fg:    white;
 
 
   /* Syntax --------------------------------- */
@@ -33,7 +37,10 @@
   --syntax-attribute:  hsl( 41, 99%, 30%);
   --syntax-import:     hsl(301, 63%, 40%);
   --syntax-snippet:    hsl(119, 34%, 47%);
+}
 
+
+:root {
 
   /* Typography --------------------------------- */
 
@@ -44,7 +51,7 @@
 
   /* Layout --------------------------------- */
 
-  --bar-height: 24px; /* Used for tabs, status-bar */
+  --bar-height: 28px; /* Used for tabs, status-bar */
 
   --spacer:    8px; /* default */
 
@@ -59,6 +66,6 @@
 
   /* Misc --------------------------------- */
 
-  --border-radius: 3px;
-
+  --border:         1px solid var(--border-color);
+  --border-radius:  3px;
 }
