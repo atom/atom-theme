@@ -1,0 +1,71 @@
+
+/* Atom theme */
+
+:root {
+
+  /* Colors --------------------------------- */
+
+  --hue: 220;
+  --saturation: 10%;
+  --lightness: 99%;
+
+  --bg:           hsl( var(--hue), var(--saturation), var(--lightness) );
+  --bg-selected:  hsl( var(--hue), var(--saturation), calc( var(--lightness) - 12%) );
+  --bg-below:     hsl( var(--hue), var(--saturation), calc( var(--lightness) - 8%) );  /* darken */
+
+  --fg-strong:    hsl( var(--hue), var(--saturation), calc( var(--lightness) - 90%) );
+  --fg:           hsl( var(--hue), var(--saturation), calc( var(--lightness) - 60%) );
+  --fg-subtle:    hsl( var(--hue), var(--saturation), calc( var(--lightness) - 40%) );
+
+  --border-color: hsl( var(--hue), var(--saturation), calc( var(--lightness) - 16%) );  /* darken */
+
+  --accent:       hsl(280, 100%, 60%);
+  --accent-fg:    white;
+
+
+  /* Syntax --------------------------------- */
+
+  --syntax-variable:   hsl(  5, 74%, 59%);
+  --syntax-constant:   hsl( 41, 99%, 30%);
+  --syntax-property:   hsl(208,  8%, 24%);
+  --syntax-value:      hsl(208,  8%, 24%);
+  --syntax-function:   hsl(221, 87%, 60%);
+  --syntax-method:     hsl(221, 87%, 60%);
+  --syntax-class:      hsl( 41, 99%, 38%);
+  --syntax-keyword:    hsl(301, 63%, 40%);
+  --syntax-tag:        hsl(  5, 74%, 59%);
+  --syntax-attribute:  hsl( 41, 99%, 30%);
+  --syntax-import:     hsl(301, 63%, 40%);
+  --syntax-snippet:    hsl(119, 34%, 47%);
+}
+
+
+:root {
+
+  /* Typography --------------------------------- */
+
+  --font-size:    12px;
+  --font-family:  'BlinkMacSystemFont', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  --font-height:  1.5;
+
+
+  /* Layout --------------------------------- */
+
+  --bar-height: 28px; /* Used for tabs, status-bar */
+
+  --spacer:    8px; /* default */
+
+  --spacer-0:    0;
+  --spacer-1:  4px;
+  --spacer-2:  8px;
+  --spacer-3: 12px;
+  --spacer-4: 24px;
+  --spacer-5: 32px;
+  --spacer-6: 40px;
+
+
+  /* Misc --------------------------------- */
+
+  --border:         1px solid var(--border-color);
+  --border-radius:  3px;
+}
