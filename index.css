@@ -7,23 +7,49 @@
 
   --hue: 220;
   --saturation: 30%;
-  --lightness: 20%;
+  --lightness: 16%;
 
-  --bg:           hsl( var(--hue), var(--saturation), var(--lightness) );
-  --bg-selected:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 4%) );
-  --bg-below:     hsl( var(--hue), var(--saturation), calc( var(--lightness) - 4%) );  /* darken */
+
+  /* Main UI */
 
   --fg-strong:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 80%) );
   --fg:           hsl( var(--hue), var(--saturation), calc( var(--lightness) + 50%) );
   --fg-subtle:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 30%) );
 
-  --border-color: hsl( var(--hue), var(--saturation), calc( var(--lightness) - 8%) );  /* darken */
+  --bg:           hsl( var(--hue), var(--saturation), var(--lightness) );
+  --bg-selected:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 6%) );
 
-  --accent:       hsl(280, 100%, 60%);
-  --accent-fg:    white;
+  --border-color: hsl( var(--hue), var(--saturation), calc( var(--lightness) - 8%) );
 
 
-  /* Syntax --------------------------------- */
+  /* States */
+  
+  --accent-fg: hsl(187, 100%, 50%);
+  --accent-bg: hsl(187,  80%, 40%);
+  
+  --success-fg: hsl(132,  60%, 55%);
+  --success-bg: hsl(132,  60%, 44%);
+  
+  --warning-fg: hsl( 37,  90%, 70%);
+  --warning-bg: hsl( 37,  90%, 44%);
+  
+  --error-fg:   hsl(  0,  90%, 66%);
+  --error-bg:   hsl(  0,  90%, 56%);
+
+  --state-fg:white; /* Text on state bg colors, make sure contrast is high enough */
+  
+
+  /* Editor */
+
+  --editor-h: var(--hue);
+  --editor-s: var(--saturation);
+  --editor-l: calc( var(--lightness) + 6%);
+  --editor-bg: hsl( var(--editor-h), var(--editor-s), var(--editor-l) );
+  --editor-selection: hsl( var(--editor-h), var(--editor-s), calc( var(--editor-l) + 10%) );
+  --editor-guide: hsl( var(--editor-h), var(--editor-s), calc( var(--editor-l) + 12%) );
+
+
+  /* Syntax */
 
   --syntax:             hsl( var(--hue), 20%, 90%);
 
