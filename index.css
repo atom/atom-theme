@@ -13,8 +13,8 @@
   /* Main UI */
 
   --fg-strong:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 80%) );
-  --fg:           hsl( var(--hue), var(--saturation), calc( var(--lightness) + 50%) );
-  --fg-subtle:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 30%) );
+  --fg:           hsl( var(--hue), var(--saturation), calc( var(--lightness) + 60%) );
+  --fg-subtle:    hsl( var(--hue), calc( var(--saturation) - 10%), calc( var(--lightness) + 40%) );
 
   --bg:           hsl( var(--hue), var(--saturation), var(--lightness) );
   --bg-selected:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 6%) );
@@ -22,10 +22,22 @@
   --border-color: hsl( var(--hue), var(--saturation), calc( var(--lightness) - 8%) );
 
 
+  /* Controls + Inputs */
+
+  --control-fg:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 60%) );
+  --control-bg:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 14%) ); 
+
+  --input-fg:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 60%) );
+  --input-bg:  hsl( var(--hue), var(--saturation), calc( var(--lightness) - 4%) ); 
+
+
+
+
+
   /* States */
   
-  --accent-fg: hsl(187, 100%, 50%);
-  --accent-bg: hsl(187,  80%, 40%);
+  --accent-fg: hsl(260, 100%, 77%);
+  --accent-bg: hsl(260,  80%, 66%);
   
   --success-fg: hsl(132,  60%, 55%);
   --success-bg: hsl(132,  60%, 44%);
