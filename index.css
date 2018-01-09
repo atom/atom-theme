@@ -12,9 +12,9 @@
 
   /* Main UI */
 
-  --fg-strong:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 80%) );
-  --fg:           hsl( var(--hue), var(--saturation), calc( var(--lightness) + 60%) );
-  --fg-subtle:    hsl( var(--hue), calc( var(--saturation) - 10%), calc( var(--lightness) + 40%) );
+  --fg-strong:    hsl( var(--hue), var(--saturation),               calc( 100% - var(--lightness)) );
+  --fg:           hsl( var(--hue), var(--saturation),               calc(  90% - var(--lightness)) );
+  --fg-subtle:    hsl( var(--hue), calc( var(--saturation) - 10%),  calc(  70% - var(--lightness)) );
 
   --bg:           hsl( var(--hue), var(--saturation), var(--lightness) );
   --bg-selected:  hsl( var(--hue), var(--saturation), calc( var(--lightness) + 6%) );
@@ -56,6 +56,7 @@
   --editor-h: var(--hue);
   --editor-s: var(--saturation);
   --editor-l: calc( var(--lightness) + 6%);
+
   --editor-bg: hsl( var(--editor-h), var(--editor-s), var(--editor-l) );
   --editor-selection: hsl( var(--editor-h), var(--editor-s), calc( var(--editor-l) + 10%) );
   --editor-guide: hsl( var(--editor-h), var(--editor-s), calc( var(--editor-l) + 12%) );
