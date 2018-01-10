@@ -9,7 +9,7 @@
   --saturation: 30%;
   --lightness: 16%;
 
-
+  
   /* Global */
 
   --border-color: hsl( var(--hue), var(--saturation), calc( var(--lightness) - 8%) );
@@ -30,22 +30,52 @@
 
   /* Editor */
 
+  --editor-level: 6%;
+
   --editor-fg:           hsl( var(--hue), var(--saturation),               calc(  90% - var(--lightness)) );
   --editor-fg-strong:    hsl( var(--hue), var(--saturation),               calc( 100% - var(--lightness)) );
   --editor-fg-subtle:    hsl( var(--hue), calc( var(--saturation) - 10%),  calc(  70% - var(--lightness)) );
 
-  --editor-bg:             hsl( var(--hue), var(--saturation), calc( var(--lightness) + 6%) );
-  --editor-bg-highlight:   hsl( var(--hue), var(--saturation), calc( var(--lightness) + 10%) );
-  --editor-bg-selected:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + 14%) );
-  --editor-bg-control:     hsl( var(--hue), var(--saturation), calc( var(--lightness) + 16%) );
-  --editor-bg-input:       hsl( var(--hue), var(--saturation), calc( var(--lightness) + 2%) );
+  --editor-bg:             hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--editor-level) + 0%) );
+  --editor-bg-highlight:   hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--editor-level) + 4%) );
+  --editor-bg-selected:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--editor-level) + 6%) );
+  --editor-bg-control:     hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--editor-level) + 12%) );
+  --editor-bg-input:       hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--editor-level) - 4%) );
+
+
+
+  /* Overlay */
+
+  --overlay-level: 10%;
+
+  --overlay-fg:           hsl( var(--hue), var(--saturation),               calc(  90% - var(--lightness)) );
+  --overlay-fg-strong:    hsl( var(--hue), var(--saturation),               calc( 100% - var(--lightness)) );
+  --overlay-fg-subtle:    hsl( var(--hue), calc( var(--saturation) - 10%),  calc(  70% - var(--lightness)) );
+
+  --overlay-bg:             hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--overlay-level) + 0%) );
+  --overlay-bg-highlight:   hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--overlay-level) + 4%) );
+  --overlay-bg-selected:    hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--overlay-level) + 6%) );
+  --overlay-bg-control:     hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--overlay-level) + 12%) );
+  --overlay-bg-input:       hsl( var(--hue), var(--saturation), calc( var(--lightness) + var(--overlay-level) - 4%) );
+
+
+
+  --overlay-fg:           hsl( 220, 10%, 30% );
+  --overlay-fg-strong:    hsl( 220, 20%, 10% );
+  --overlay-fg-subtle:    hsl( 220, 10%, 50% );
+
+  --overlay-bg:             hsl( 220, 100%, 80% );
+  --overlay-bg-highlight:   hsl( 220, 100%, 84% );
+  --overlay-bg-selected:    hsl( 220, 100%, 92% );
+  --overlay-bg-control:     hsl( 220, 100%, 96% );
+  --overlay-bg-input:       hsl( 220,  66%, 66% );
 
 
 
   /* States */
   
-  --accent-fg: hsl(260, 100%, 77%);
-  --accent-bg: hsl(260,  80%, 66%);
+  --accent-fg: hsl(340,  90%, 77%);
+  --accent-bg: hsl(340,  90%, 56%);
   
   --success-fg: hsl(132,  60%, 55%);
   --success-bg: hsl(132,  60%, 44%);
