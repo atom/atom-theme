@@ -89,27 +89,22 @@
   --state-fg:white; /* Text on state bg colors, make sure contrast is high enough */
   
 
-
-
-
   /* Syntax */
+  
+  --syntax-m-1: hsl( var(--hue), 20%, 90%);
+  --syntax-m-2: hsl( var(--hue), 20%, 70%);
+  --syntax-m-3: hsl( var(--hue), 20%, 50%);
+  --syntax-m-4: hsl( var(--hue), 20%, 40%);
 
-  --syntax:             hsl( var(--hue), 20%, 90%);
+  --syntax-1: hsl(191, 91%, 73%);
+  --syntax-2: hsl( 48, 71%, 76%);
+  --syntax-3: hsl(  5, 91%, 73%);
+  --syntax-4: hsl(286, 82%, 79%);
+  --syntax-5: hsl(212, 99%, 75%);
+  --syntax-6: hsl(282, 99%, 75%);
+  --syntax-7: hsl(191, 91%, 73%);
+  --syntax-8: hsl(118, 69%, 78%);
 
-  --syntax-variable:   hsl(191, 91%, 73%);
-  --syntax-constant:   hsl( 48, 71%, 76%);
-  --syntax-property:   hsl(  5, 91%, 73%);
-  --syntax-value:      hsl(286, 82%, 79%);
-  --syntax-function:   hsl(212, 99%, 75%);
-  --syntax-method:     hsl(212, 99%, 75%);
-  --syntax-class:      hsl(191, 91%, 73%);
-  --syntax-keyword:    hsl(118, 69%, 78%);
-  --syntax-string:     hsl( 88, 69%, 78%);
-  --syntax-tag:        hsl( var(--hue), 60%, 88%);
-  --syntax-attribute:  hsl( var(--hue), 40%, 70%);
-
-  --syntax-punctuation: hsl( var(--hue), 10%, 60%);
-  --syntax-comment:     hsl( var(--hue), 15%, 50%);
 }
 
 
