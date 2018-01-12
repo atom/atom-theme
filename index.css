@@ -27,17 +27,17 @@
 
   /* Editor */
 
-  --editor-fg:           hsl(180, 20%, 80%);
-  --editor-fg-strong:    hsl(180, 50%, 99%);
-  --editor-fg-subtle:    hsl(180, 10%, 50%);
+  --editor-fg:           hsl(320, 20%, 80%);
+  --editor-fg-strong:    hsl(320, 50%, 99%);
+  --editor-fg-subtle:    hsl(320, 10%, 50%);
   
-  --editor-bg:           hsl(180, 40%, 20%);
-  --editor-bg-highlight: hsl(180, 20%, 24%);
-  --editor-bg-selected:  hsl(180, 20%, 28%);
-  --editor-bg-control:   hsl(180, 20%, 30%);
-  --editor-bg-input:     hsl(180, 10%, 16%);
+  --editor-bg:           hsl(320, 40%, 20%);
+  --editor-bg-highlight: hsl(320, 20%, 24%);
+  --editor-bg-selected:  hsl(320, 20%, 28%);
+  --editor-bg-control:   hsl(320, 20%, 30%);
+  --editor-bg-input:     hsl(320, 10%, 16%);
   
-  --editor-border:       hsl(180, 10%, 14%);
+  --editor-border:       hsl(320, 10%, 14%);
 
 
 
